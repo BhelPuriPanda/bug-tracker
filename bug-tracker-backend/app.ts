@@ -5,6 +5,7 @@ import cors from "cors";
 import morgan from "morgan";
 
 import authRoutes from "./routes/auth.route.js";
+import projectRoutes from "./projects/project.route.js";
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.get("/health", (_req, res) => {
 
 // routes
 app.use("/auth", authRoutes);
+app.use("/projects", projectRoutes);
 
 // TODO: add global error handler here later
 

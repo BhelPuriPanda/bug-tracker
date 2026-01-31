@@ -148,3 +148,4 @@ model IssueLabel {
 
   @@id([issueId, labelId]) // composite PK
 }
+
