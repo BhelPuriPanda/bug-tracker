@@ -6,6 +6,10 @@ import morgan from "morgan";
 
 import authRoutes from "./routes/auth.route.js";
 import projectRoutes from "./projects/project.route.js";
+import issueRoutes from "./bugs/bug.route.js";
+import labelRoutes from "./routes/label.route.js";
+import statusRoutes from "./routes/status.route.js";
+import commentRoutes from "./comments/controller.route.js";
 
 const app = express();
 
@@ -22,6 +26,10 @@ app.get("/health", (_req, res) => {
 // routes
 app.use("/auth", authRoutes);
 app.use("/projects", projectRoutes);
+app.use("/", issueRoutes);
+app.use("/labels", labelRoutes);
+app.use("/", statusRoutes);
+app.use("/", commentRoutes);
 
 // TODO: add global error handler here later
 
