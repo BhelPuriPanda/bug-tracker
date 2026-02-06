@@ -41,6 +41,8 @@ It supports **projects, members, issues, labels, comments, role-based access con
 
 ## 🏗 Project Structure
 
+```
+
 bug-tracker-backend/
 │
 ├─ prisma/ # Prisma schema & migration files
@@ -63,7 +65,7 @@ bug-tracker-backend/
 ├─ server.ts # Server entry point
 └─ app.ts # Express app configuration
 
-
+```
 ---
 
 ## ⚙️ Getting Started
